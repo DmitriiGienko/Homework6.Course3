@@ -48,6 +48,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
         entityManager.merge(empForUpdate);
         entityManager.getTransaction().commit();
         entityManager.close();
+
     }
 
     @Override
@@ -58,5 +59,6 @@ public class EmployeeDaoImpl implements EmployeeDao {
         entityManager.remove(empForDelete);
         entityManager.getTransaction().commit();
         entityManager.close();
+
     }
 }

@@ -1,5 +1,6 @@
 import DaoImpl.CityDaoImpl;
 import DaoImpl.EmployeeDaoImpl;
+import DaoImpl.EntityUtil;
 import pojo.City;
 import pojo.Employee;
 
@@ -40,6 +41,7 @@ public class Application {
             System.out.println(employee);
         }
 
+        EntityUtil.closeManagerFactory();
 
 
     }

@@ -24,6 +24,7 @@ public class CityDaoImpl implements CityDao {
                 .collect(Collectors.toList());
         entityManager.getTransaction().commit();
         entityManager.close();
+
     }
 
     @Override
@@ -45,7 +46,6 @@ public class CityDaoImpl implements CityDao {
         cityForUpdate.setCityName(city.getCityName());
         entityManager.getTransaction().commit();
         entityManager.close();
-
     }
 
     @Override
